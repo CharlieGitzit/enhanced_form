@@ -1,4 +1,4 @@
- 🌍  Immigration Intake Experience
+# 🌍 Immigration Intake Experience
 
 A calm, guided way to prepare immigration information before speaking with a licensed professional.
 
@@ -6,36 +6,42 @@ This project provides a conversational intake experience that mirrors the struct
 
 The goal is simple: reduce stress, improve clarity, and make professional consultations more productive.
 
-📊 🗂  What This Tool Does
+---
 
-Guides users through important background questions
+## 📊 🗂 What This Tool Does
 
-Organizes responses in a structured, easy-to-review format
-
-Tracks progress and readiness visually
-
-Provides official public resources for learning
-
-Generates a shareable intake summary PDF
+- Guides users through important background questions
+- Organizes responses in a structured, easy-to-review format
+- Tracks progress and readiness visually
+- Provides official public resources for learning
+- Generates a shareable intake summary PDF
 
 This creates a smoother starting point for conversations with immigration consultants or attorneys.
 
-🛡️ 🏛 ⚖️  Trust, Privacy & Purpose
+---
+
+## 🛡️ 🏛 ⚖️ Trust, Privacy & Purpose
 
 This tool is designed to support preparation — not replace professional advice.
 
 No legal guidance is provided, and the experience avoids collecting sensitive documents. It focuses on helping individuals organize information so their time with a licensed professional can be more efficient and less stressful.
 
-⚠️  ⚠️  ⚠️  ⚠️  Disclaimer
+---
+
+## ⚠️ ⚠️ ⚠️ ⚠️ Disclaimer
 
 This project is for informational and organizational purposes only and does not constitute legal advice.
+
 For case-specific guidance, always consult a licensed immigration professional.
 
-🖥  Getting Started
+---
+
+## 🖥 Getting Started
 
 No installation needed.
 
-Simply open index.html in your browser to begin the experience locally.
+Simply open `index.html` in your browser to begin the experience locally.
 
 Built to be clear, respectful, and human-centered — because preparation should feel supportive, not intimidating.
+
 
