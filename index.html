@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Immigration Intake Experience</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+  <div class="nav">
+      <div class="header-title">Intake Experience</div>
+    <nav>
+      <a href="#knowledge">Knowledge</a>
+      <a href="#chatbot">Intake Chat</a>
+      <a href="#library">Resources</a>
+    </nav>
+  </div>
+
+  <div class="hero-grid">
+    <div class="quote">“Some questions may feel personal. You can take your time.”</div>
+    <div class="quote">“We’re here to organize information calmly and respectfully.”</div>
+    <div class="quote">“Preparation now makes professional consultations easier later.”</div>
+  </div>
+</header>
+
+<main>
+<section id="knowledge" class="section">
+  <h2>Understanding This Experience</h2>
+  <p>This guided intake mirrors official immigration form structures, helping you organize information calmly and accurately. This tool does not provide legal advice, but prepares you for productive consultation with licensed professionals.</p>
+  <div class="stat">Average intake time: <strong>1-5 minutes</strong></div>
+</section>
+
+<section id="chatbot" class="section chatbot-section">
+  <h2>Your Guided Intake</h2>
+
+  <div class="progress-wrapper">
+    <div class="progress-bar">
+      <div id="progress-fill"></div>
+      <span id="progress-text">0%</span>
+    </div>
+  </div>
+
+  <div id="confidence-meter">Confidence Level: Getting Started</div>
+
+  <div class="chat-container">
+    <div id="chat-window"></div>
+    <div id="why-box"></div>
+    <div class="input-area">
+      <input type="text" id="user-input" placeholder="Type your answer here..." autocomplete="off" />
+      <button id="send-btn">Send</button>
+    </div>
+  </div>
+</section>
+
+<section id="library" class="section">
+  <h2>Additional Resources</h2>
+  <p class="resource-note">Official resources to help you understand terminology and processes before your consultation.</p>
+  <div class="links">
+    <a href="https://www.uscis.gov/forms" target="_blank" rel="noopener">USCIS Forms Library</a>
+    <a href="https://i94.cbp.dhs.gov" target="_blank" rel="noopener">Retrieve I-94 Travel Record</a>
+    <a href="https://www.justice.gov/eoir" target="_blank" rel="noopener">Immigration Court Information</a>
+    <a href="https://egov.uscis.gov/processing-times/" target="_blank" rel="noopener">USCIS Processing Times</a>
+    <a href="https://www.census.gov/topics/population/foreign-born.html" target="_blank" rel="noopener">U.S. Immigration Data (Census)</a>
+    <a href="https://www.uscis.gov/avoid-scams" target="_blank" rel="noopener">How to Avoid Immigration Scams</a>
+  </div>
+</section>
+</main>
+
+<div class="export-section">
+  <button id="export-pdf">Export Intake Summary</button>
+  <div id="readiness-score"></div>
+</div>
+
+<footer>
+  <div>Email: example@email.com</div>
+  <div>Phone: (000) 000-0000</div>
+  <div class="trust-line">This preparation tool references publicly available immigration materials.</div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+
