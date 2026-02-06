@@ -1,79 +1,92 @@
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
-  background: linear-gradient(135deg, #1F2937, #374151);
-  color: #E5E7EB;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #2C3E50, #34495E);
+  color: #ECF0F1;
 }
 
 header {
-  padding: 50px 10%;
-  background-color: #1E3A8A;
-  border-bottom: 2px solid #4B5563;
-}
-
-.nav {
+  padding: 60px 15%;
+  background: linear-gradient(135deg, #1A252F, #2C3E50);
+  border-bottom: 2px solid #34495E;
+  box-shadow: 0 7px 12px rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 .nav a {
-  color: #F3F4F6;
+  color: #ECF0F1;
   text-decoration: none;
-  margin-left: 20px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 12px;
   transition: all 0.3s ease;
 }
 
 .nav a:hover {
-  color: #A5B4FC;
-  text-shadow: 0 0 6px #A5B4FC, 0 0 15px #9333EA;
+  color: #F39C12;
+  text-shadow: 0 0 25px #F39C12, 0 0 30px #F39C12;
 }
 
 .header-title {
-  text-align: center;
+  font-family: 'Merriweather', serif;
   font-weight: 700;
   font-size: 2.5rem;
-  color: #A5B4FC;
-  margin: 35px 0;
-  letter-spacing: 0.7px;
+  color: #F1C40F;
+  margin: 0;
+  letter-spacing: 1px;
+  flex: 2;
+  text-align: left;
+  flex-basis: 100%;
+  margin-bottom: 15px;
 }
 
 .hero-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-  margin-top: 50px;
+  gap: 20px;
+  margin-top: 60px;
+  width: 100%;
 }
 
-.quote {
-  background: rgba(255, 255, 255, 0.08);
+.hero-grid .quote {
+  background: rgba(255, 255, 255, 0.1);
   padding: 25px;
   border-radius: 16px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: default;
+  font-size: 1.1rem;
+  cursor: pointer;
 }
 
-.quote:hover {
+.hero-grid .quote:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(165, 180, 252, 0.7);
+  box-shadow: 0 0 35px rgba(241, 196, 15, 0.8);
 }
 
 .section {
-  padding: 80px 10%;
+  padding: 80px 15%;
+  font-size: 1.1rem;
 }
 
 .stat {
   margin-top: 15px;
-  color: #A5B4FC;
+  color: #F39C12;
 }
 
 .chat-container {
   margin: 30px auto;
-  width: 65%;
+  width: 75%;
   min-width: 320px;
-  background: #1F2937;
-  border-radius: 20px;
-  box-shadow: 0 0 25px rgba(165, 180, 252, 0.5);
+  background: #1A252F;
+  border-radius: 18px;
+  box-shadow: 0 0 30px rgba(241, 196, 15, 0.7);
   display: flex;
   flex-direction: column;
   height: 600px;
@@ -89,50 +102,50 @@ header {
 }
 
 .bubble {
-  padding: 14px 18px;
-  border-radius: 18px;
+  padding: 15px 20px;
+  border-radius: 16px;
   margin: 12px 0;
   max-width: 80%;
   line-height: 1.5;
   word-break: break-word;
-  font-size: 1.05rem;
+  font-size: 1.1rem;
 }
 
 .bot {
-  background: #4B5563;
+  background: #2C3E50;
   align-self: flex-start;
 }
 
 .user {
-  background: #9333EA;
+  background: #F39C12;
   color: white;
   align-self: flex-end;
 }
 
 .input-area {
   display: flex;
-  border-top: 1px solid #4B5563;
+  border-top: 1px solid #7D8C8E;
 }
 
 input {
   flex: 1;
-  padding: 15px;
+  padding: 16px;
   border: none;
-  font-size: 1rem;
-  color: #1F2937;
-  background: #F9FAFB;
+  font-size: 1.05rem;
+  color: #34495E;
+  background: #ECF0F1;
   border-radius: 8px;
 }
 
 input:focus {
   outline: none;
-  border: 2px solid #9333EA;
+  border: 2px solid #F39C12;
 }
 
 button {
-  background: #9333EA;
+  background: #F39C12;
   border: none;
-  padding: 15px;
+  padding: 16px;
   cursor: pointer;
   transition: background 0.3s ease, box-shadow 0.3s ease;
   font-weight: 600;
@@ -141,8 +154,8 @@ button {
 }
 
 button:hover {
-  background: #7B2CBF;
-  box-shadow: 0 0 12px #9333EA;
+  background: #F1C40F;
+  box-shadow: 0 0 20px #F39C12;
 }
 
 .progress-wrapper {
@@ -152,8 +165,8 @@ button:hover {
 }
 
 .progress-bar {
-  height: 16px;
-  background: #374151;
+  height: 18px;
+  background: #5D3F70;
   border-radius: 10px;
   position: relative;
 }
@@ -161,7 +174,7 @@ button:hover {
 #progress-fill {
   height: 100%;
   width: 0;
-  background: linear-gradient(90deg, #A5B4FC, #9333EA);
+  background: linear-gradient(90deg, #F39C12, #F1C40F);
   border-radius: 10px;
   transition: width 0.3s ease;
 }
@@ -171,39 +184,39 @@ button:hover {
   width: 100%;
   text-align: center;
   top: -22px;
-  font-size: 0.85rem;
-  color: #F3F4F6;
+  font-size: 1rem;
+  color: #ECF0F1;
   font-weight: 600;
 }
 
 #confidence-meter {
   text-align: center;
-  margin: 12px;
-  color: #A5B4FC;
+  margin: 15px;
+  color: #F39C12;
   font-weight: 600;
 }
 
 #why-box {
-  font-size: 0.85rem;
-  color: #B8C0CC;
+  font-size: 1rem;
+  color: #BDC3C7;
   padding: 0 20px 15px;
-  min-height: 40px;
+  min-height: 42px;
 }
 
 .links {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
 }
 
 .links a {
-  color: #A5B4FC;
+  color: #F39C12;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .links a:hover {
-  color: #7B2CBF;
+  color: #F1C40F;
   text-decoration: underline;
 }
 
@@ -214,10 +227,10 @@ button:hover {
 }
 
 #export-pdf {
-  padding: 14px 28px;
+  padding: 16px 28px;
   font-size: 1.1rem;
   cursor: pointer;
-  background-color: #A5B4FC;
+  background-color: #F39C12;
   border: none;
   border-radius: 10px;
   transition: background-color 0.3s ease;
@@ -225,27 +238,59 @@ button:hover {
 }
 
 #export-pdf:hover {
-  background-color: #7B2CBF;
+  background-color: #F1C40F;
 }
 
 #readiness-score {
   font-weight: 600;
-  color: #A5B4FC;
-  margin-top: 15px;
+  color: #F39C12;
+  margin-top: 12px;
 }
 
 footer {
   text-align: center;
   padding: 35px;
-  background: #1F2937;
-  font-size: 0.95rem;
-  color: #B8C0CC;
+  background: #2C3E50;
+  border-top: 3px solid #F39C12;
+  font-size: 1.05rem;
+  color: #ECF0F1;
+  box-shadow: 0 -3px 15px rgba(0, 0, 0, 0.3);
 }
 
-.trust-line {
-  margin-top: 12px;
+footer .trust-line {
+  margin-top: 15px;
   font-size: 0.8rem;
-  color: #6B7280;
+  color: #BDC3C7;
   font-style: italic;
+}
+
+footer .social-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+footer .social-links a {
+  color: #F39C12;
+  font-size: 1.4rem;
+  transition: all 0.3s ease;
+}
+
+footer .social-links a:hover {
+  color: #F1C40F;
+  transform: scale(1.2);
+}
+
+.chat-container {
+  margin: 30px auto;
+  width: 80%;
+  min-width: 320px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 18px;
+  box-shadow: 0 0 30px rgba(241, 196, 15, 0.5);
+  display: flex;
+  flex-direction: column;
+  height: 600px;
 }
 
