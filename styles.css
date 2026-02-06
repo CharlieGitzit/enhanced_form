@@ -1,0 +1,251 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #1F2937, #374151);
+  color: #E5E7EB;
+}
+
+header {
+  padding: 50px 10%;
+  background-color: #1E3A8A;
+  border-bottom: 2px solid #4B5563;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav a {
+  color: #F3F4F6;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: all 0.3s ease;
+}
+
+.nav a:hover {
+  color: #A5B4FC;
+  text-shadow: 0 0 6px #A5B4FC, 0 0 15px #9333EA;
+}
+
+.header-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #A5B4FC;
+  margin: 35px 0;
+  letter-spacing: 0.7px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 50px;
+}
+
+.quote {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 25px;
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.quote:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(165, 180, 252, 0.7);
+}
+
+.section {
+  padding: 80px 10%;
+}
+
+.stat {
+  margin-top: 15px;
+  color: #A5B4FC;
+}
+
+.chat-container {
+  margin: 30px auto;
+  width: 65%;
+  min-width: 320px;
+  background: #1F2937;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(165, 180, 252, 0.5);
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+}
+
+#chat-window {
+  flex: 1;
+  padding: 25px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: smooth;
+}
+
+.bubble {
+  padding: 14px 18px;
+  border-radius: 18px;
+  margin: 12px 0;
+  max-width: 80%;
+  line-height: 1.5;
+  word-break: break-word;
+  font-size: 1.05rem;
+}
+
+.bot {
+  background: #4B5563;
+  align-self: flex-start;
+}
+
+.user {
+  background: #9333EA;
+  color: white;
+  align-self: flex-end;
+}
+
+.input-area {
+  display: flex;
+  border-top: 1px solid #4B5563;
+}
+
+input {
+  flex: 1;
+  padding: 15px;
+  border: none;
+  font-size: 1rem;
+  color: #1F2937;
+  background: #F9FAFB;
+  border-radius: 8px;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid #9333EA;
+}
+
+button {
+  background: #9333EA;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  font-weight: 600;
+  color: white;
+  border-radius: 8px;
+}
+
+button:hover {
+  background: #7B2CBF;
+  box-shadow: 0 0 12px #9333EA;
+}
+
+.progress-wrapper {
+  width: 60%;
+  margin: 0 auto 15px;
+  position: relative;
+}
+
+.progress-bar {
+  height: 16px;
+  background: #374151;
+  border-radius: 10px;
+  position: relative;
+}
+
+#progress-fill {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #A5B4FC, #9333EA);
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+#progress-text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: -22px;
+  font-size: 0.85rem;
+  color: #F3F4F6;
+  font-weight: 600;
+}
+
+#confidence-meter {
+  text-align: center;
+  margin: 12px;
+  color: #A5B4FC;
+  font-weight: 600;
+}
+
+#why-box {
+  font-size: 0.85rem;
+  color: #B8C0CC;
+  padding: 0 20px 15px;
+  min-height: 40px;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.links a {
+  color: #A5B4FC;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.links a:hover {
+  color: #7B2CBF;
+  text-decoration: underline;
+}
+
+.export-section {
+  text-align: center;
+  margin: 50px 0;
+  display: none;
+}
+
+#export-pdf {
+  padding: 14px 28px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  background-color: #A5B4FC;
+  border: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+#export-pdf:hover {
+  background-color: #7B2CBF;
+}
+
+#readiness-score {
+  font-weight: 600;
+  color: #A5B4FC;
+  margin-top: 15px;
+}
+
+footer {
+  text-align: center;
+  padding: 35px;
+  background: #1F2937;
+  font-size: 0.95rem;
+  color: #B8C0CC;
+}
+
+.trust-line {
+  margin-top: 12px;
+  font-size: 0.8rem;
+  color: #6B7280;
+  font-style: italic;
+}
+
