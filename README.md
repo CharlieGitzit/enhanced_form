@@ -20,7 +20,7 @@ This creates a smoother starting point for conversations with immigration consul
 
 ---
 
-## 🛡️ 🏛 ⚖️ Trust, Privacy & Purpose
+## 🛡️ ⚖️ Trust, Privacy & Purpose
 
 This tool is designed to support preparation — not replace professional advice.
 
@@ -28,7 +28,7 @@ No legal guidance is provided, and the experience avoids collecting sensitive do
 
 ---
 
-## ⚠️ ⚠️ ⚠️ ⚠️ Disclaimer
+## ⚠️ ⚠️  Disclaimer
 
 This project is for informational and organizational purposes only and does not constitute legal advice.
 
