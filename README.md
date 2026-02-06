@@ -1,4 +1,4 @@
-# 🌍 Immigration Intake Experience
+#  Immigration Intake Experience
 
 A calm, guided way to prepare immigration information before speaking with a licensed professional.
 
